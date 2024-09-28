@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int num;
+    double num;
 
     printf("temperature :");
-    scanf ("%d",&num);
+    scanf ("%lf",&num);
 
-    if (num == 37)
+    if (num >= 36.1 && num <= 37.2)
     {
         printf("votre temperature est normale");
     }

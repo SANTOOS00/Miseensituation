@@ -1,14 +1,41 @@
 #include <stdio.h>
 int main()
 {
-    int  num[100] = {2,3,4,5,6};
-    int  i;
-    printf("entree : ");
-    scanf ("%d",&i);
-    while (num[i])
+    float misaha[100];
+    int i = 0;
+    int n;
+
+    printf("number :");
+    scanf("%d",&n);
+
+    while(n > i)
     {
-        printf("%d\n",num[i]);
+        printf("number%d =",i + 1);
+        scanf("%f",&misaha[i]);
         i++;
     }
-    return(0);
+    float max = misaha[0];
+    float asra = misaha[1];
+
+    int y = 1;
+    while (n > y)
+    {
+        if (misaha[y] > max)
+        {
+            max = misaha[y];
+        }
+        y++;
+    }
+    int z = 1;
+    while (n > z)
+    {
+        if(misaha[z] < asra)
+        {
+            asra = misaha[z];
+        }
+        z++;
+    }
+    printf("max :%f",max);
+    printf("asra :%f",asra);
+    return (0);
 }
